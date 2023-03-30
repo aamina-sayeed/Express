@@ -1,0 +1,6 @@
+
+mvc arch
+
+m-models-db modelling
+v-views-front end (html ui part)
+c-controllers-backend api/server code

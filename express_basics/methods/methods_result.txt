@@ -1,0 +1,52 @@
+req_methods:
+
+1.body-express.json()-
+2.host-192.168.0.105
+3.hostname-192.168.0.105
+4.ip-::ffff:192.168.0.104 //windows ip
+5.method-GET
+6.originalURL-/home -gives the whole url 
+
+7.params-{
+    		"id": "1ddda"
+		}
+
+8.path-gives the whole url except the query part
+
+i/p:http://192.168.0.105:5000/home/12ddds?1320983219 
+o/p:/home/12ddds
+
+9.query-gives the query part of url 
+i/p:http://192.168.0.105:5000/home/12ddds?1320983219:djhsd=dsasdad
+o/p-{
+    "1320983219:djhsd": "dsasdad"
+     }
+
+response_methods:
+
+1.download-downloads specified file in windows/opens it in postman
+
+2.end-blank page or error status code displayedif res.status(404).end() -to end the response
+
+3.json-{
+    "msg": "This is a message bruh!!"
+	}//sends resp in json format 
+
+4.redirect-   res.redirect("http://www.google.com")-redirects page to given url
+
+
+5.send-sends response of html or text type ro array or json type
+o/p:[
+    1,
+    2,
+    3
+]
+
+6.sendstatus-sends statuscode as response
+ex:res.sendStatus(200)
+o/p:OK
+
+7.status-sets statusCode
+but if no res.send /json with it will keep asking for response in a loop
+
+

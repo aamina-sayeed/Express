@@ -23,8 +23,9 @@ Features of Express:
 
 //Client can be :
 
-POstman 
+Postman 
 curl
 axios
 wget
 browser only for get method
+insomnia
